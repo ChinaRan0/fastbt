@@ -1,5 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore")
+
 from rule import arl
 from rule import viper
 from rule import awvs
@@ -14,6 +15,7 @@ from rule import nps
 from rule import nps2
 from rule import ChatGPTnextWeb
 from rule import DBJ
+from rule import linbing
 def finger(IPport):
     ip, port = IPport.split(":") 
     port=int(port) 
@@ -31,3 +33,4 @@ def finger(IPport):
     nps2.check(ip,port)
     ChatGPTnextWeb.check(ip,port)
     DBJ.check(ip,port)
+    linbing.check(ip,port)

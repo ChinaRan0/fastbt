@@ -28,7 +28,7 @@ def scan_ports(target_ip, port_list, num_threads=10):
 
 def main(ipInput):
     target_ip = ipInput
-    port_list = [80, 443, 8080, 22, 3389,5003,8888,3443,5000,6000,7000,8081,5005,3200,8001,8834,8082,8083,8084,8085]  # 探测端口列表
+    port_list = [80, 443, 8080, 22, 3389,5003,8888,3443,5000,6000,7000,8081,5005,3200,8001,8834,8082,8083,8084,8085,11000,8800]  # 探测端口列表
     open_ports = scan_ports(target_ip, port_list)
     zichanList=[]                           #存储列表
     if open_ports:
